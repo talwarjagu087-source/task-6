@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 450px; /* Adjusted to match the wide rectangle in the drawing */
+    height: 150px;
+  }
+  td {
+    border: 2px solid darkblue;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .empty-cell {
+    /* Gives the bottom cell enough height to match the drawing's proportions */
+    height: 80px; 
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <!-- Top Row: Three separate color columns -->
+  <tr>
+    <td style="background-color: red; color: white; width: 33.33%;">Red</td>
+    <td style="background-color: green; color: white; width: 33.33%;">Green</td>
+    <td style="background-color: blue; color: white; width: 33.33%;">Blue</td>
+  </tr>
+  <!-- Bottom Row: One empty cell spanning all three columns -->
+  <tr>
+    <td colspan="3" class="empty-cell"></td>
+  </tr>
+</table>
+
+</body>
+</html>
